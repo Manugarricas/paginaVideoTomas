@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 50px;
+    background-color: gray;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-size: xx-large;
+    font-family: monospace;
+    margin-top: 80px;
+}
+
+.opciones {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
+    grid-template-areas: 
+        '. concerts sellers about contact .'
+    ;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#concerts {
+    grid-area: concerts;
+    font-size: x-large;
+    border-right: 2px solid black;
+}
+
+#sellers {
+    grid-area: sellers;
+    font-size: x-large;
+}
+
+#about {
+    grid-area: about;
+    font-size: x-large;
+    border-left: 2px solid black;
+}
+
+#contact {
+    grid-area: contact;
+    font-size: x-large;
+    border-left: 2px solid black;
+}
+
+section  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 200px;
+}
+
+.fotico {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+}
+
+@media screen and (max-width: 940px) {
+    
+    h4 {
+        margin-top: 20px;
+    }
+
+    .opciones {
+        margin-top: 20px;
+    }
+
+    section {
+        margin-top: 40px;
+    }
+
+    .fotico {
+        height: 100px;
+        width: 100px;
+    }
+}

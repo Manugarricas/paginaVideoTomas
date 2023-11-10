@@ -13,7 +13,7 @@ h4 {
     text-align: center;
     font-size: xx-large;
     font-family: monospace;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .opciones {
@@ -51,11 +51,52 @@ h4 {
 
 section  {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 14% 1fr 1fr 1fr 14%;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". div1 div2 div3 ."
+        ". div4 div5 div6 ."
+        ". div7 div8 div9 ."
+    ;
     grid-gap: 20px;
     justify-items: center;
-    margin-top: 200px;
+    margin-top: 130px;
+}
+
+#div1 {
+    grid-area: div1;
+}
+
+#div2 {
+    grid-area: div2;
+}
+
+#div3 {
+    grid-area: div3;
+}
+
+#div4 {
+    grid-area: div4;
+}
+
+#div5 {
+    grid-area: div5;
+}
+
+#div6 {
+    grid-area: div6;
+}
+
+#div7 {
+    grid-area: div7;
+}
+
+#div8 {
+    grid-area: div8;
+}
+
+#div9 {
+    grid-area: div9;
 }
 
 .fotico {
@@ -75,6 +116,7 @@ section  {
     }
 
     section {
+        justify-content: center;
         margin-top: 40px;
     }
 
